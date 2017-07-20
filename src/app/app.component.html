@@ -18,3 +18,10 @@
   </li>
 </ul>
 
+<app-header>
+  <img [src]='logo' [attr.width]='width'>
+  {{title}}
+  <app-search [placeholder]='placeholder' (search)="SearchTerm = $event"></app-search>
+</app-header>
+
+{{SearchTerm}}

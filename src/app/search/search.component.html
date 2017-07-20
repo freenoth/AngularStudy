@@ -1,0 +1,12 @@
+<!--<p>-->
+  <!--search works!-->
+<!--</p>-->
+
+<!--<input type="text" #searchRef (input)="input()">-->
+
+<!--{{searchRef.value}}-->
+
+<md-input-container>
+  <input mdInput [placeholder]="placeholder" (input)="search(search.emit($event.target.value))">
+</md-input-container>
+
